@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+
+<html lang="en" style="scroll-behavior: smooth;" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nithish Raj</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="header" >
+        <div class="container" >
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">My Projects</a></li>
+                    <li><a href="#portfolio">Achievements</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                
+                <h1>Hi, I'm <span>Nithish Raj</span></h1>
+                <p>Entry-Level Web Developer</p><br>
+                <p>This is My Portfolio</p>  
+                <p id="quotes">" I still learn, Because I think it's the best thing in life "
+                    - Cristiano Ronaldo</p>  
+                <script src="https://kit.fontawesome.com/979357af7a.js" crossorigin="anonymous"></script>
+            </div>
+        </div>
+    </div>
+
+<!-- -------------------About---------------- -->
+<div id="about" onclick="closemenu()"> 
+    <div class="container">
+        <div class="row">
+            <!-- <div class="about-col-1">
+                <img src="images/user.png" alt="">
+            </div> -->
+            <div class="about-col-2">
+                <h1 class="subtitle">About Me</h1>
+                <p>I am a passionate and versatile programmer with a solid foundation in HTML, CSS, JavaScript, Python, and C programming. As a recent graduate, 
+                    I have honed my problem-solving skills through challenges on platforms like LeetCode. 
+                    My primary focus is on full-stack web development, and my portfolio website is a reflection of my dedication and expertise. 
+                    Explore my projects to see firsthand how I leverage my programming knowledge to create dynamic and responsive web applications.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+                
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+
+                    <p class="tab-links" onclick="opentab('others')">Others</p>
+                </div>
+
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Web Development</span> <br>  Html - Css - Javascript - React</li><br>
+                        <li><span>Competitive Coding</span> <br> Python - C programming - SQL</li><br> 
+                        <li><span>Content Creation</span> <br> Youtube - NGO'S(Ekprayaas)</li><br> 
+                    </ul>
+                </div>
+
+
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2024 BACHELOR OF ENGINEERING B.E- ECE</span> <br>Sona college of technology<br> 8.2 CGPA</li><br>
+                        <li><span>2020 HIGHER SECONDARY</span><br> Malco Vidyalaya Matric HSS <br> Class 12th - 75%</li><br> 
+                        <li><span>2018 SECONDARY SCHOOL</span> <br> Malco Vidyalaya Matric HSS <br> Class 10th - 85%</li><br> 
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="others">
+                    <ul>
+                        <li><span>Internship</span> <br>Ekprayaas Foundation<br>Tutor- Content creator</li><br>
+                        <li><span>Sports</span><br> Football Player - Freestyle Football <br> <a href="videos.html">See my skills</a> </li><br> 
+                        <li><span>Hackathon's</span> <br> MSME Idea Hackathon 3.0 <br>Ust hackathon</li><br> 
+                    </ul>
+                </div>
+
+
+            </div>  
+        </div>
+    </div>
+</div>
+
+<!-- --------------Services-------------- -->
+
+<div id="services" onclick="closemenu()">
+    <div class="container">
+        <h1 class="subtitle">My Projects</h1>
+        <div class="services-list">
+            <div>
+                <h2>PCOS Prediction</h2>
+                <p class="Domain">Domain: WebDevelopment and  Machine learning</p>
+                <p>Early prediction of PCOS disease and obesity
+                    with using machine learning techniques
+                    </p>
+                <a id="pcospdf" href="pcos.pdf">learn more</a>
+            </div>
+            <div>
+                <h2>Mini Projects</h2>
+                <p class="Domain">Domain: Front-end with JS functionalities</p>
+                <ul>
+                    <li class="mini"> Todo list <a class="mtnb" href="/miniproject/todolist.html">Try</a></li>
+                    <li class="mini"> Book Notes <a class="mtnb" href="/miniproject/booksky.html">Try</a></li>
+                    <li class="mini"> Number Guess Game <a class="mtnb" href="/miniproject/guess.html">Try</a></li>
+                </ul>
+                
+            </div>
+            <div>
+                <h2>Wake Glasses</h2>
+                <p class="Domain">Domain: Smart Sensors</p>
+                <p>Wake glasses for commercial vehicle drivers
+                    to prevent accident
+                    </p>
+               
+            </div>
+        </div>
+    </div>
+</div>   
+
+<!-- ------------Achievements------------ -->
+<div id="portfolio" onclick="closemenu()">
+    <div class="container">
+        <h1 id="subtitle">My Achievements</h1>
+        <div class="worklist">
+                <div class="Work">
+                    <p id="see">Touch to see more</p>
+                    <img src="images/work-1.jpg">
+                    <div class="layer">
+                        <h3>Codekaze - By Coding Ninjas</h3>
+                        <p> 2nd Rank in college
+                        </p>
+                        <a href="#">
+                            <i class="fa-solid fa-link"></i>
+                        </a>
+                    </div>
+                    
+                </div>
+
+                <div class="Work">
+                    <img src="images/work-2.jpg">
+                    <div class="layer">
+                        <h3>Competitive coding </h3>
+                        <p>Solved 150+ coding problems in Various platforms
+                        </p>
+                        <a href="#">
+                            <i class="fa-solid fa-link"></i>
+                        </a>
+                    </div>       
+                </div>
+
+                <div class="Work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>NPTEL Certification</h3>
+                        <p>Completed a certification program on IOT from IIT Kharagpur
+                        </p>
+                        <a href="#">
+                            <i class="fa-solid fa-link"></i> 
+                        </a>
+                    </div>
+                </div>
+                    
+                
+        </div>
+        <a class="btn">See More</a>
+    </div>
+</div>
+
+
+<!-- --------------Contact--------------- -->
+<div id="contact" onclick="closemenu()">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+             <h1 class="subtitle">Contact Me</h1>
+             <p> <i class="fa-solid fa-paper-plane"></i>nithishraj0901@gmail.com</p>
+             <p><i class="fa-solid fa-phone"></i>9345880553</p>
+             <div id="social-icons">
+                <a href="https://www.linkedin.com/in/nithish-raj-parthiparaj-879739230/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Nithish9345?tab=repositories"><i class="fa-brands fa-github"></i></a>
+                <a href="https://leetcode.com/nithishprof09/"><i class="fa-solid fa-code"></i></a>
+                
+             </div>
+             <a href="Nithish raj - Resume.pdf" download class="btn btn2">View Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea required>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div> 
+        </div>
+    </div>
+    <div class="copyright"><p>Copyright &copy; Nithish.</p></div>
+</div>
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-links")
+        }
+
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-links")
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+
+
+<script>
+    var sidemeu = document.getElementById("sidemenu")
+    var hmenu = document.getElementsByClassName("fa-solid")
+    function openmenu()
+    {
+        sidemeu.style.right = "0"
+    }
+
+    function closemenu()
+    {
+        sidemeu.style.right = "-200px"
+    }
+
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxscKE_PdUetj-7hfYqToziElOFjGer9xqaL6Kz_mYeZ41JMkdKCX4xWMGg4_zP37pk/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+
+    })
+    
+  </script>
+
+
+</body>
+</html>

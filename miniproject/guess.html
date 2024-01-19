@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #3498db;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #2c3e50;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+            color: #ecf0f1;
+        }
+
+        h1 {
+            color: #ecf0f1;
+        }
+
+        input {
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            width: 100%; 
+            box-sizing: border-box; 
+            border: 1px solid #1a252f;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #2ecc71;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%; 
+        }
+
+        button:hover {
+            background-color: #27ae60;
+        }
+
+        h2 {
+            margin-top: 20px;
+        }
+
+        /* Responsive styles for smaller screens */
+        @media (max-width: 600px) {
+            input,
+            button {
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Guess the number from 1 to 10</h1>
+        <input placeholder="Enter a number" id="ip" type="number">
+        <button onclick="Guess()">Check</button>
+        <h2 id="result"></h2>
+        <h2 id="score">Your score is 10</h2>
+    </div>
+
+    <script>
+        s_val = 10
+        r_num = Math.floor((Math.random() * 10)) + 1
+        result = document.getElementById("result")
+        score = document.getElementById("score")
+
+        function Guess() {
+            box = document.getElementById("ip")
+            box = Number(box.value)
+
+            if (box == r_num)
+                result.textContent = "You are Correct !!";
+            else {
+                s_val -= 1;
+                result.textContent = "You are Wrong !";
+                score.textContent = "Your score is " + s_val;
+            }
+        }
+    </script>
+</body>
+
+</html>
