@@ -403,6 +403,8 @@ nav .fa-solid{
     #header{
             background-image: url(images/pnonebackgound.jpg);
     }
+
+
     .touch .Work:hover img {
         transform: scale(1.1);
     }
@@ -410,6 +412,8 @@ nav .fa-solid{
     .touch .Work:hover .layer {
         height: 100%;
     }
+
+
     .header-text{
         margin-top: 20%;
         font-size: 16px;
