@@ -237,6 +237,42 @@
         sidemeu.style.right = "-200px"
     }
 
+       if ('ontouchstart' in document.documentElement) {
+    document.documentElement.classList.add('touch');
+}
+
+// Function to handle scroll and toggle the class for .Work and .layer
+function handleScroll() {
+    const scrollThreshold = window.innerHeight * 0.7; // Adjust the threshold as needed
+
+    const workElements = document.querySelectorAll('.Work');
+    const layerElements = document.querySelectorAll('.layer');
+
+    workElements.forEach(work => {
+        const rect = work.getBoundingClientRect();
+        if (rect.top < scrollThreshold && rect.bottom > 0) {
+            work.querySelector('img').style.transform = 'scale(1.1)';
+        } else {
+            work.querySelector('img').style.transform = 'none';
+        }
+    });
+
+    layerElements.forEach(layer => {
+        const rect = layer.getBoundingClientRect();
+        if (rect.top < scrollThreshold && rect.bottom > 0) {
+            layer.style.height = '100%';
+        } else {
+            layer.style.height = '0%';
+        }
+    });
+}
+
+// Attach the scroll event listener
+document.addEventListener('scroll', handleScroll);
+
+// Initial call to handle scroll on page load
+handleScroll();
+
 
 </script>
 
